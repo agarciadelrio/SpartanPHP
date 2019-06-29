@@ -1,0 +1,20 @@
+{
+  "name": "spartanphp",
+  "version": "1.0.0",
+  "description": "A very light MVC framework only for spartan developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agarciadelrio/SpartanPHP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agarciadelrio/SpartanPHP/issues"
+  },
+  "homepage": "https://github.com/agarciadelrio/SpartanPHP#readme"
+}
