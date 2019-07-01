@@ -1,0 +1,30 @@
+-
+  echo = function(content) {
+    return `<?php echo ${content} ?>`
+  }
+
+mixin php(content=undefined)
+  if block
+    |<?php
+    block
+    |?>
+  else
+    <?php !{content} ?>
+
+mixin hola
+  p Hola Mundo Mixins
+
+mixin input
+  - label = attributes.label || null
+  - name = attributes.name || null
+  - id = attributes.id || name || null
+  - type = attributes.type || 'text'
+  .form-group
+    if label
+      label(for=id)= label
+    input.form-control(type=type, name=name, id=id)
+
+mixin button
+  - klass = attributes.class
+  button.btn(class=`btn-${klass}`)
+    block
